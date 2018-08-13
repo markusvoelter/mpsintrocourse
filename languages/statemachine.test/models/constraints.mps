@@ -102,7 +102,7 @@
                 </node>
               </node>
               <node concept="Xl_RD" id="6u4eORbDOR9" role="3uHU7B">
-                <property role="Xl_RC" value="test_" />
+                <property role="Xl_RC" value="Test_" />
               </node>
             </node>
           </node>
