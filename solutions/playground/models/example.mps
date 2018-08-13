@@ -3,9 +3,22 @@
   <persistence version="9" />
   <languages>
     <use id="ec192600-e7e1-4a3e-8ddf-ce429474a2ed" name="statemachine" version="0" />
+    <use id="388b264c-9809-4e2e-b292-61ab9914c8d0" name="statemachine.test" version="-1" />
   </languages>
   <imports />
   <registry>
+    <language id="388b264c-9809-4e2e-b292-61ab9914c8d0" name="statemachine.test">
+      <concept id="7459152088147528103" name="statemachine.test.structure.TestCase" flags="ng" index="2G8rbE">
+        <reference id="7459152088147528104" name="machine" index="2G8rb_" />
+        <child id="7459152088147529057" name="contents" index="2G8roG" />
+      </concept>
+      <concept id="7459152088147529060" name="statemachine.test.structure.AssertState" flags="ng" index="2G8roD">
+        <reference id="7459152088147529063" name="state" index="2G8roE" />
+      </concept>
+      <concept id="7459152088147529090" name="statemachine.test.structure.TriggerMachine" flags="ng" index="2G8rrf">
+        <reference id="7459152088147529091" name="event" index="2G8rre" />
+      </concept>
+    </language>
     <language id="ec192600-e7e1-4a3e-8ddf-ce429474a2ed" name="statemachine">
       <concept id="7459152088147169320" name="statemachine.structure.StateMachine" flags="ng" index="2G92H_">
         <child id="7459152088147263655" name="contents" index="2G9rJE" />
@@ -46,6 +59,18 @@
     </node>
     <node concept="2G9kjs" id="6u4eORbD3Dj" role="2G9rJE">
       <property role="TrG5h" value="green" />
+    </node>
+  </node>
+  <node concept="2G8rbE" id="6u4eORbDKFr">
+    <ref role="2G8rb_" node="6u4eORbCnXb" resolve="TrafficLight" />
+    <node concept="2G8roD" id="6u4eORbDOIo" role="2G8roG">
+      <ref role="2G8roE" node="6u4eORbCyop" resolve="red" />
+    </node>
+    <node concept="2G8rrf" id="6u4eORbDSfr" role="2G8roG">
+      <ref role="2G8rre" node="6u4eORbCyok" resolve="pedestrianButton" />
+    </node>
+    <node concept="2G8roD" id="6u4eORbDSrC" role="2G8roG">
+      <ref role="2G8roE" node="6u4eORbD3Dj" resolve="green" />
     </node>
   </node>
 </model>
