@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="statestuff" uuid="86be0a72-d86a-46e6-a4a8-9b3c377f8ade">
+  <exported-language name="ec192600-e7e1-4a3e-8ddf-ce429474a2ed(statemachine)" />
+  <exported-language name="388b264c-9809-4e2e-b292-61ab9914c8d0(statemachine.test)" />
+  <exported-language name="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" />
+  <exported-language name="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" />
+</dev-kit>
+
