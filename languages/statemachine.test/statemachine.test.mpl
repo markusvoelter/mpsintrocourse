@@ -17,6 +17,7 @@
       <dependencies>
         <dependency reexport="false">49808fad-9d41-4b96-83fa-9231640f6b2b(JUnit)</dependency>
         <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+        <dependency reexport="false">775134a4-c0dd-4eec-b5a6-18f21e52d840(statemachine#01)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="6" />
@@ -44,10 +45,26 @@
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
+        <module reference="775134a4-c0dd-4eec-b5a6-18f21e52d840(statemachine#01)" version="0" />
         <module reference="388b264c-9809-4e2e-b292-61ab9914c8d0(statemachine.test)" version="0" />
         <module reference="7c6c1b6a-aaba-467a-9372-64154f298b99(statemachine.test#01)" version="0" />
       </dependencyVersions>
-      <mapping-priorities />
+      <mapping-priorities>
+        <mapping-priority-rule kind="strictly_together">
+          <greater-priority-mapping>
+            <generator generatorUID="7c6c1b6a-aaba-467a-9372-64154f298b99(statemachine.test#01)" />
+            <external-mapping>
+              <mapping-node modelUID="r:5833d7e7-f859-4afd-bc4c-7d2c5c31f642(main@generator)" nodeID="7459152088147528102" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="775134a4-c0dd-4eec-b5a6-18f21e52d840(statemachine#01)" />
+            <external-mapping>
+              <mapping-node modelUID="r:e47df657-0d8b-4f7b-a646-a4d317c97cdf(main@generator)" nodeID="7459152088147169312" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+      </mapping-priorities>
     </generator>
   </generators>
   <sourcePath />
