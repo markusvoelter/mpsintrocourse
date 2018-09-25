@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="sioux" uuid="797d2e60-0b62-40eb-b9ab-2f369771e6da">
+  <exported-language name="3c4e563e-c48f-4816-96ba-be6d0d479f98(hardware)" />
+  <exported-language name="ec192600-e7e1-4a3e-8ddf-ce429474a2ed(statemachine)" />
+  <exported-language name="f3eafff0-30d2-46d6-9150-f0f3b880ce27(org.iets3.core.expr.path)" />
+  <exported-language name="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" />
+  <exported-language name="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" />
+  <exported-solutions>
+    <exported-solution>1c56daef-6a92-4d68-8014-fbbd0240d553(org.iets3.core.expr.mutable.interpreter)</exported-solution>
+  </exported-solutions>
+</dev-kit>
+
