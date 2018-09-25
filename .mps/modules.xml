@@ -3,6 +3,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/devkits/sioux/sioux.devkit" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/XMLGenerator/XMLGenerator.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/hardware/hardware.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/smHwAdapter/smHwAdapter.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/statemachine/statemachine.mpl" folder="" />

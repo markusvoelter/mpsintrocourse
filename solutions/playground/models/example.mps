@@ -7,6 +7,8 @@
     <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="2" />
     <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="1" />
     <use id="e9adb20b-6b6d-4a4a-870a-376f9757ca12" name="smHwAdapter" version="0" />
+    <use id="fa9a3d83-7bfe-4e95-8e67-657a5c40d49e" name="XMLGenerator" version="0" />
+    <engage id="fa9a3d83-7bfe-4e95-8e67-657a5c40d49e" name="XMLGenerator" />
     <devkit ref="797d2e60-0b62-40eb-b9ab-2f369771e6da(sioux)" />
   </languages>
   <imports />
@@ -23,6 +25,9 @@
       <concept id="7459152088147263377" name="statemachine.structure.State" flags="ng" index="2G9kjs">
         <property id="7459152088147263378" name="initial" index="2G9kjv" />
         <child id="7459152088147263534" name="contents" index="2G9rHz" />
+      </concept>
+      <concept id="7459152088147263734" name="statemachine.structure.EventTrigger" flags="ng" index="2G9rIV">
+        <reference id="7459152088147263735" name="event" index="2G9rIU" />
       </concept>
     </language>
     <language id="e9adb20b-6b6d-4a4a-870a-376f9757ca12" name="smHwAdapter">
@@ -104,44 +109,98 @@
     <node concept="2G9kjh" id="6u4eORbCyok" role="2G9rJE">
       <property role="TrG5h" value="pedestrianButton" />
     </node>
+    <node concept="2G9kjh" id="3m5dVzpGezR" role="2G9rJE">
+      <property role="TrG5h" value="bikeButton" />
+    </node>
     <node concept="2G9kjs" id="6u4eORbCyop" role="2G9rJE">
       <property role="TrG5h" value="red" />
       <property role="2G9kjv" value="true" />
       <node concept="2G9kji" id="6u4eORbD3D6" role="2G9rHz">
         <ref role="2G9kjI" node="6u4eORbD3Dj" resolve="green" />
         <node concept="M2Eas" id="1Wct9KH1J5x" role="2G9rDH">
-          <ref role="M2Eat" node="1Wct9KH1tqP" resolve="loopActivated" />
+          <ref role="M2Eat" node="1Wct9KH1tqP" resolve="bikeDetected" />
+        </node>
+      </node>
+      <node concept="2G9kji" id="3m5dVzpGn61" role="2G9rHz">
+        <ref role="2G9kjI" node="6u4eORbD3Dj" resolve="green" />
+        <node concept="M2Eas" id="3m5dVzpGn6z" role="2G9rDH">
+          <ref role="M2Eat" node="3m5dVzpGdyz" resolve="carDetected" />
+        </node>
+      </node>
+      <node concept="2G9kji" id="3m5dVzpGn6f" role="2G9rHz">
+        <ref role="2G9kjI" node="6u4eORbD3Dj" resolve="green" />
+        <node concept="M2Eas" id="3m5dVzpGn6C" role="2G9rDH">
+          <ref role="M2Eat" node="3m5dVzpGfQj" resolve="truckDetected" />
         </node>
       </node>
     </node>
     <node concept="2G9kjs" id="6u4eORbD3Dj" role="2G9rJE">
       <property role="TrG5h" value="green" />
+      <node concept="2G9kji" id="3m5dVzpFOjT" role="2G9rHz">
+        <ref role="2G9kjI" node="6u4eORbCyop" resolve="red" />
+        <node concept="2G9rIV" id="3m5dVzpFOk3" role="2G9rDH">
+          <ref role="2G9rIU" node="6u4eORbCyok" resolve="pedestrianButton" />
+        </node>
+      </node>
+    </node>
+    <node concept="2G9kjs" id="3m5dVzpFOjc" role="2G9rJE">
+      <property role="TrG5h" value="yellow" />
     </node>
   </node>
   <node concept="M2hZF" id="1Wct9KH1mRI">
     <property role="TrG5h" value="TrafficLightsController" />
     <node concept="M2h_G" id="1Wct9KH1n1t" role="M2h_J">
-      <property role="TrG5h" value="loop1" />
+      <property role="TrG5h" value="bikeLoop" />
       <property role="M2gj3" value="0" />
       <property role="M2gjX" value="200" />
     </node>
     <node concept="M2h_G" id="1Wct9KH1qJC" role="M2h_J">
-      <property role="TrG5h" value="loop2" />
+      <property role="TrG5h" value="carLoop" />
       <property role="M2gj3" value="0" />
-      <property role="M2gjX" value="300" />
+      <property role="M2gjX" value="500" />
     </node>
     <node concept="M2ty9" id="1Wct9KH1tqP" role="M2ty4">
-      <property role="TrG5h" value="loopActivated" />
+      <property role="TrG5h" value="bikeDetected" />
       <node concept="30bXRB" id="1Wct9KH1GHs" role="M2q8_">
         <property role="30bXRw" value="120" />
       </node>
       <node concept="1af_rf" id="1Wct9KH1L3E" role="M2q8F">
         <ref role="1afhQb" node="1Wct9KH1J7I" resolve="thresholdReached" />
         <node concept="M2Bx9" id="1Wct9KH1L4O" role="1afhQ5">
-          <ref role="M2Bxa" node="1Wct9KH1n1t" resolve="loop1" />
+          <ref role="M2Bxa" node="1Wct9KH1n1t" resolve="bikeLoop" />
         </node>
         <node concept="30bXRB" id="1Wct9KH1L5L" role="1afhQ5">
-          <property role="30bXRw" value="150" />
+          <property role="30bXRw" value="100" />
+        </node>
+      </node>
+    </node>
+    <node concept="M2ty9" id="3m5dVzpGdyz" role="M2ty4">
+      <property role="TrG5h" value="carDetected" />
+      <node concept="30bXRB" id="3m5dVzpGdy$" role="M2q8_">
+        <property role="30bXRw" value="70" />
+      </node>
+      <node concept="1af_rf" id="3m5dVzpGdy_" role="M2q8F">
+        <ref role="1afhQb" node="1Wct9KH1J7I" resolve="thresholdReached" />
+        <node concept="M2Bx9" id="3m5dVzpGdJD" role="1afhQ5">
+          <ref role="M2Bxa" node="1Wct9KH1qJC" resolve="carLoop" />
+        </node>
+        <node concept="30bXRB" id="3m5dVzpGdyB" role="1afhQ5">
+          <property role="30bXRw" value="200" />
+        </node>
+      </node>
+    </node>
+    <node concept="M2ty9" id="3m5dVzpGfQj" role="M2ty4">
+      <property role="TrG5h" value="truckDetected" />
+      <node concept="30bXRB" id="3m5dVzpGfQk" role="M2q8_">
+        <property role="30bXRw" value="70" />
+      </node>
+      <node concept="1af_rf" id="3m5dVzpGfQl" role="M2q8F">
+        <ref role="1afhQb" node="1Wct9KH1J7I" resolve="thresholdReached" />
+        <node concept="M2Bx9" id="3m5dVzpGfQm" role="1afhQ5">
+          <ref role="M2Bxa" node="1Wct9KH1qJC" resolve="carLoop" />
+        </node>
+        <node concept="30bXRB" id="3m5dVzpGfQn" role="1afhQ5">
+          <property role="30bXRw" value="200" />
         </node>
       </node>
     </node>
