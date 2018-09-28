@@ -35,6 +35,9 @@
       <concept id="7459152088147263734" name="statemachine.structure.EventTrigger" flags="ng" index="2G9rIV">
         <reference id="7459152088147263735" name="event" index="2G9rIU" />
       </concept>
+      <concept id="2237291329018701933" name="statemachine.structure.TimeoutTrigger" flags="ng" index="MddNL">
+        <property id="2237291329018701934" name="time" index="MddNM" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -56,9 +59,18 @@
           <ref role="2G9rIU" node="6u4eORbCyok" resolve="pedestrianButton" />
         </node>
       </node>
+      <node concept="2G9kji" id="1Wct9KHem_3" role="2G9rHz">
+        <ref role="2G9kjI" node="1Wct9KHem_j" resolve="timeout" />
+        <node concept="MddNL" id="1Wct9KHem_f" role="2G9rDH">
+          <property role="MddNM" value="2" />
+        </node>
+      </node>
     </node>
     <node concept="2G9kjs" id="6u4eORbD3Dj" role="2G9rJE">
       <property role="TrG5h" value="green" />
+    </node>
+    <node concept="2G9kjs" id="1Wct9KHem_j" role="2G9rJE">
+      <property role="TrG5h" value="timeout" />
     </node>
   </node>
   <node concept="2G8rbE" id="6u4eORbDKFr">

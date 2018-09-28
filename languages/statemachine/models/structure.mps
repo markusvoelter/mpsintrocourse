@@ -147,5 +147,16 @@
       <ref role="20lvS9" node="6u4eORbCnYs" resolve="Event" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1Wct9KHeaxH">
+    <property role="EcuMT" value="2237291329018701933" />
+    <property role="TrG5h" value="TimeoutTrigger" />
+    <property role="34LRSv" value="after" />
+    <ref role="1TJDcQ" node="6u4eORbCo3P" resolve="Trigger" />
+    <node concept="1TJgyi" id="1Wct9KHeaxI" role="1TKVEl">
+      <property role="IQ2nx" value="2237291329018701934" />
+      <property role="TrG5h" value="time" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
 </model>
 

@@ -21,6 +21,7 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -125,7 +126,7 @@
         <node concept="3XFhqQ" id="6u4eORbCo0C" role="3EZMnx" />
         <node concept="3F2HdR" id="6u4eORbCo0K" role="3EZMnx">
           <ref role="1NtTu8" to="op4d:6u4eORbCo0I" resolve="contents" />
-          <node concept="2iRkQZ" id="6u4eORbCo0Q" role="2czzBx" />
+          <node concept="2EHx9g" id="1Wct9KHem_$" role="2czzBx" />
         </node>
         <node concept="2iRfu4" id="6u4eORbCo0u" role="2iSdaV" />
       </node>
@@ -167,6 +168,21 @@
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1Wct9KHeaya">
+    <ref role="1XX52x" to="op4d:1Wct9KHeaxH" resolve="TimeoutTrigger" />
+    <node concept="3EZMnI" id="1Wct9KHeayg" role="2wV5jI">
+      <node concept="2iRfu4" id="1Wct9KHeayh" role="2iSdaV" />
+      <node concept="3F0ifn" id="1Wct9KHeayc" role="3EZMnx">
+        <property role="3F0ifm" value="after" />
+      </node>
+      <node concept="3F0A7n" id="1Wct9KHeayv" role="3EZMnx">
+        <ref role="1NtTu8" to="op4d:1Wct9KHeaxI" resolve="time" />
+      </node>
+      <node concept="3F0ifn" id="1Wct9KHeayG" role="3EZMnx">
+        <property role="3F0ifm" value="ms" />
       </node>
     </node>
   </node>

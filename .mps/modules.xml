@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/statemachine.test/statemachine.test.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/statemachine/statemachine.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/javaplayground/javaplayground.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/playground/playground.msd" folder="" />
     </projectModules>
   </component>
