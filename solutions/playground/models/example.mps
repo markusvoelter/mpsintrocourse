@@ -2,6 +2,7 @@
 <model ref="r:32aaf1e3-6b2e-4a01-ae2d-d1f88f67acf3(playground.example)">
   <persistence version="9" />
   <languages>
+    <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
     <devkit ref="86be0a72-d86a-46e6-a4a8-9b3c377f8ade(statestuff)" />
   </languages>
   <imports />
@@ -97,17 +98,8 @@
   </registry>
   <node concept="2G92H_" id="6u4eORbCnXb">
     <property role="TrG5h" value="TrafficLight" />
-    <node concept="2G9kjh" id="L1AWMdZQtW" role="2G9rJE">
-      <property role="TrG5h" value="sdkjfdsj" />
-    </node>
     <node concept="2G9kjh" id="6u4eORbCyok" role="2G9rJE">
       <property role="TrG5h" value="pedestrianButton" />
-    </node>
-    <node concept="2G9kjh" id="L1AWMe0Jky" role="2G9rJE">
-      <property role="TrG5h" value="vla" />
-    </node>
-    <node concept="2G9kjh" id="L1AWMe142W" role="2G9rJE">
-      <property role="TrG5h" value="test" />
     </node>
     <node concept="1TJWhE" id="4ByeTwKnZQn" role="2G9rJE">
       <property role="TrG5h" value="counter" />
@@ -119,7 +111,7 @@
       <property role="TrG5h" value="red" />
       <property role="2G9kjv" value="true" />
       <node concept="2G9kji" id="4ByeTwKoFwD" role="2G9rHz">
-        <ref role="2G9kjI" node="6u4eORbD3Dj" resolve="grdedrxen" />
+        <ref role="2G9kjI" node="6u4eORbD3Dj" resolve="green" />
         <node concept="2G9rIV" id="4ByeTwKoFwE" role="2G9rDH">
           <ref role="2G9rIU" node="6u4eORbCyok" resolve="pedestrianButton" />
         </node>
@@ -134,8 +126,8 @@
       </node>
     </node>
     <node concept="2G9kjs" id="6u4eORbD3Dj" role="2G9rJE">
-      <property role="TrG5h" value="grdedrxen" />
-      <property role="2G9kjv" value="true" />
+      <property role="TrG5h" value="green" />
+      <property role="2G9kjv" value="false" />
     </node>
     <node concept="37mRI7" id="L1AWMe1OaV" role="lGtFl">
       <node concept="37mRIm" id="L1AWMe1OaW" role="37mRID">
@@ -387,16 +379,6 @@
         </node>
       </node>
     </node>
-    <node concept="2G9kjs" id="L1AWMe6h6X" role="2G9rJE">
-      <property role="2G9kjv" value="true" />
-      <property role="TrG5h" value="NeS" />
-      <node concept="2G9kji" id="L1AWMeb288" role="2G9rHz">
-        <ref role="2G9kjI" node="6u4eORbD3Dj" resolve="grdedrxen" />
-        <node concept="2G9rIV" id="L1AWMeb2ae" role="2G9rDH">
-          <ref role="2G9rIU" node="L1AWMdZQtW" resolve="sdkjfdsj" />
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="2G8rbE" id="6u4eORbDKFr">
     <ref role="2G8rb_" node="6u4eORbCnXb" resolve="TrafficLight" />
@@ -407,7 +389,7 @@
       <ref role="2G8rre" node="6u4eORbCyok" resolve="pedestrianButton" />
     </node>
     <node concept="2G8roD" id="6u4eORbDSrC" role="2G8roG">
-      <ref role="2G8roE" node="6u4eORbD3Dj" resolve="grdedrxen" />
+      <ref role="2G8roE" node="6u4eORbD3Dj" resolve="green" />
     </node>
   </node>
 </model>
