@@ -6,9 +6,9 @@
   </languages>
   <imports>
     <import index="op4d" ref="r:e6aac129-ad30-404a-bffd-bbb7552438f9(statemachine.structure)" />
+    <import index="ydy5" ref="r:773dc7b9-ae4f-4b0d-b04d-fee95b7fe240(statemachine.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="ydy5" ref="r:773dc7b9-ae4f-4b0d-b04d-fee95b7fe240(statemachine.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -132,6 +132,7 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -202,16 +203,9 @@
           <node concept="3zFVjK" id="6u4eORbEzug" role="3zH0cK">
             <node concept="3clFbS" id="6u4eORbEzuh" role="2VODD2">
               <node concept="3clFbF" id="6u4eORbEzui" role="3cqZAp">
-                <node concept="2OqwBi" id="6u4eORbEzuj" role="3clFbG">
-                  <node concept="2OqwBi" id="6u4eORbEzuk" role="2Oq$k0">
-                    <node concept="30H73N" id="6u4eORbEzul" role="2Oq$k0" />
-                    <node concept="3TrcHB" id="6u4eORbEzum" role="2OqNvi">
-                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="6u4eORbEzun" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.hashCode():int" resolve="hashCode" />
-                  </node>
+                <node concept="2OqwBi" id="L1AWMdYkAT" role="3clFbG">
+                  <node concept="30H73N" id="L1AWMdYkji" role="2Oq$k0" />
+                  <node concept="2bSWHS" id="L1AWMdYlBc" role="2OqNvi" />
                 </node>
               </node>
             </node>
