@@ -555,7 +555,7 @@
   <node concept="24kQdi" id="L1AWMdYU9M">
     <ref role="1XX52x" to="op4d:6u4eORbC10C" resolve="StateMachine" />
     <node concept="2aJ2om" id="L1AWMdYU9S" role="CpUAK">
-      <ref role="2$4xQ3" node="L1AWMdYU9P" resolve="graphical" />
+      <ref role="2$4xQ3" node="L1AWMdYU9P" resolve="fancy" />
     </node>
     <node concept="3EZMnI" id="L1AWMdYU9V" role="2wV5jI">
       <node concept="2iRkQZ" id="L1AWMdYU9W" role="2iSdaV" />
@@ -1142,16 +1142,16 @@
     </node>
   </node>
   <node concept="2ABfQD" id="L1AWMdYU9O">
-    <property role="TrG5h" value="IrgendeinenName" />
+    <property role="TrG5h" value="State Machine" />
     <node concept="2BsEeg" id="L1AWMdYU9P" role="2ABdcP">
       <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="graphical" />
+      <property role="TrG5h" value="fancy" />
     </node>
   </node>
   <node concept="24kQdi" id="L1AWMe09fx">
     <ref role="1XX52x" to="op4d:6u4eORbCnYs" resolve="Event" />
     <node concept="2aJ2om" id="L1AWMe09fz" role="CpUAK">
-      <ref role="2$4xQ3" node="L1AWMdYU9P" resolve="graphical" />
+      <ref role="2$4xQ3" node="L1AWMdYU9P" resolve="fancy" />
     </node>
     <node concept="1kIj98" id="L1AWMe0JmX" role="2wV5jI">
       <property role="3g2DhO" value="true" />
@@ -1871,7 +1871,7 @@
       </node>
     </node>
     <node concept="2aJ2om" id="VFjlN7Hr34" role="CpUAK">
-      <ref role="2$4xQ3" node="L1AWMdYU9P" resolve="graphical" />
+      <ref role="2$4xQ3" node="L1AWMdYU9P" resolve="fancy" />
     </node>
   </node>
 </model>
