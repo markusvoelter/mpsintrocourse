@@ -12,7 +12,7 @@ A slightly advanced introduction to MPS: two languages, an generator, and interp
 ![](https://github.com/markusvoelter/mpsintrocourse/blob/master/stuff/sm3.png)
 
 
-![](https://github.com/markusvoelter/mpsintrocourse/blob/master/stuff/sm4.png)
-
-
 ![](https://github.com/markusvoelter/mpsintrocourse/blob/master/stuff/sm5.png)
+
+
+![](https://github.com/markusvoelter/mpsintrocourse/blob/master/stuff/sm4.png)
