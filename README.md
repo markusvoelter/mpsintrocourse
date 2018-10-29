@@ -9,8 +9,26 @@ A slightly advanced introduction to MPS: two languages, an generator, and interp
 * [Installation and Setup](https://www.youtube.com/watch?v=OKIyaO8NC9c)
 * [The State Machine, States and a Checking Rule](https://www.youtube.com/watch?v=MBwNejfO5JM)
 * [Transitions and Triggers](https://www.youtube.com/watch?v=ZYTk5wE3oic)
+* Building the Testing Language
+
+### Generators
+
+* Generating the State Machine to Java
+* Generating the Tests to JUnit
+
+### Expressions
+
+* Introduction to KernelF
+* Integrating Variables and Guard Conditions (embedding KernelF)
+* Building an Interpreter
+
+### Notations
+
+* A Tabular Notation for Tests
+* A Diagram Notation for State Machines
 
 
+I will release the videos over time. I will announce each newly released video on Twitter [@markusvoelter](http://twitter.com/markusvoelter)
 
 
 # Impressions
