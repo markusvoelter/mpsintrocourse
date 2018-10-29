@@ -9,7 +9,7 @@ A slightly advanced introduction to MPS: two languages, an generator, and interp
 * [Installation and Setup](https://www.youtube.com/watch?v=OKIyaO8NC9c)
 * [The State Machine, States and a Checking Rule](https://www.youtube.com/watch?v=MBwNejfO5JM)
 * [Transitions and Triggers](https://www.youtube.com/watch?v=ZYTk5wE3oic)
-* Building the Testing Language
+* [Building the Testing Language](https://www.youtube.com/watch?v=XZx61_HtgB0)
 
 ### Generators
 
