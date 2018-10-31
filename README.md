@@ -46,7 +46,7 @@ A slightly advanced introduction to MPS: two languages, an generator, and interp
 ### Expressions
 
 * [Introduction to KernelF](https://youtu.be/ZDgH1lbDVRc)
-* Integrating Variables and Guard Conditions (embedding KernelF)
+* [Integrating Variables and Guard Conditions (embedding KernelF)](https://youtu.be/4eAdWLb-woQ)
 * Building an Interpreter
 
 ### Notations
