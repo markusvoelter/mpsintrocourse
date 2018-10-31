@@ -41,7 +41,7 @@ A slightly advanced introduction to MPS: two languages, an generator, and interp
 ### Generators
 
 * [Generating the State Machine to Java](https://youtu.be/i-65_1E3vuI)
-* Generating the Tests to JUnit
+* [Generating the Tests to JUnit](https://youtu.be/CV45iCpIVgk)
 
 ### Expressions
 
