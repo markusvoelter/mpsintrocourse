@@ -48,11 +48,16 @@ A slightly advanced introduction to MPS: two languages, an generator, and interp
 * [Introduction to KernelF](https://youtu.be/ZDgH1lbDVRc)
 * [Integrating Variables and Guard Conditions (embedding KernelF)](https://youtu.be/4eAdWLb-woQ)
 * [Building an Interpreter](https://youtu.be/DqicrdcvlNE)
+* Enhancing the Java generator to include Expressions
 
 ### Notations
 
 * A Tabular Notation for Tests
 * A Diagram Notation for State Machines
+
+### Testing
+
+* Language Testing
 
 
 I will release the videos over time. I will announce each newly released video on Twitter [@markusvoelter](http://twitter.com/markusvoelter)
