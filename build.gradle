@@ -1,0 +1,131 @@
+//will pull the groovy classes/types from nexus to the classpath
+buildscript {
+    repositories {
+        maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.0.82+'
+    }
+}
+
+// ------------- DEPENDENCY VERSIONS ------------- 
+// Dependency versions
+ext.mpsVersion = '2018.2.6'
+ext.iets3OpenSourceVersion = '0.1+'
+// ------------- /DEPENDENCY VERSIONS -------------
+
+
+import de.itemis.mps.gradle.*
+apply plugin: 'base'
+
+
+// ------------- DEPENDENCY CONFIG -------------
+
+ext.dependencyRepositories = [
+        'https://projects.itemis.de/nexus/content/repositories/mbeddr',
+        'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
+]
+
+repositories {
+    mavenCentral()
+    for (repoUrl in project.dependencyRepositories) {
+        maven {
+            url repoUrl
+        }
+    }
+}
+
+configurations {
+    mps
+    mpsArtifacts
+    junitAnt
+}
+
+dependencies {
+    mps "com.jetbrains:mps:$mpsVersion"
+    mpsArtifacts "org.iets3:opensource:$iets3OpenSourceVersion"
+    junitAnt 'org.apache.ant:ant-junit:1.10.1'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion '4.10.1'
+    distributionType "all"
+}
+
+// ------------- /DEPENDENCY CONFIG -------------
+
+
+// ------------- DEPENDENCY RESOLUTION -------------
+// JDK_HOME required for adding tools.jar into classpath of the forked ant process
+if (!hasProperty("jdk_home")) {
+    def java_home = System.properties['java.home']
+    def jdk_home = java_home
+    if (!file("$jdk_home/lib/tools.jar").isFile()) {
+        jdk_home = jdk_home + "/.."
+    }
+    if (!file("$jdk_home/lib/tools.jar").isFile()) {
+        throw new GradleException("Was not able to locate jdk home folder. Use 'jdk_home' project variable to specify JDK location explicitly. Current JAVA_HOME is: $java_home")
+    }
+    ext.jdk_home = jdk_home
+}
+
+task resolveMps(type: Copy) {
+    dependsOn configurations.mps
+    from {
+        configurations.mps.resolve().collect { zipTree(it) }
+    }
+    into "$buildDir/mps"
+}
+
+task resolveMpsArtifacts(type: Copy) {
+    from {
+        configurations.mpsArtifacts.resolve().collect { zipTree(it) }
+    }
+    into "$buildDir/artifacts"
+}
+
+// ------------- /DEPENDENCY RESOLUTION -------------
+
+
+// ------------- BUILD SCRIPT PARAMS -------------
+ext.artifactsDir = new File(rootDir, 'artifacts')
+ext.build_dir = '-Dbuild.dir=' + file(rootProject.projectDir.absolutePath).getAbsolutePath()
+ext.artifacts_dir = '-Dartifacts.root=' + new File(buildDir, 'artifacts')
+ext.mps_home = '-Dmps.home=' + resolveMps.destinationDir.getAbsolutePath()
+ext.buildScriptArgs = [mps_home, build_dir, artifacts_dir]
+// tools might be needed later for running test scripts
+ext.buildScriptClasspath = project.configurations.junitAnt.fileCollection({ true }) + project.files("$project.jdk_home/lib/tools.jar")
+
+// ------------- /BUILD SCRIPT PARAMS -------------
+
+// ------------- BUILD TASKS -------------
+task buildAllScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveMpsArtifacts]) {
+    script rootProject.file('build/mpsintrocourse.allScripts/build.xml')
+    scriptArgs = buildScriptArgs
+    scriptClasspath = buildScriptClasspath
+}
+
+task buildMpsIntroCourse(type: BuildLanguages, dependsOn: [resolveMps, resolveMpsArtifacts]) {
+    script rootProject.file('build/mpsintrocourse/build.xml')
+    scriptArgs = buildScriptArgs
+    scriptClasspath = buildScriptClasspath
+}
+
+task generateLibrariesXml(type: GenerateLibrariesXml) {
+    dependsOn resolveMpsArtifacts
+    description "Will read project libraries from projectlibraries.properties and generate libraries.xml in .mps directory. Libraries are loaded in mps during start."
+    defaults rootProject.file('projectlibraries.properties')
+    overrides rootProject.file('projectlibraries.overrides.properties')
+    destination file('.mps/libraries.xml')
+}
+
+task setup {
+    dependsOn generateLibrariesXml
+    dependsOn resolveMpsArtifacts
+    description 'Set up MPS project libraries. Libraries are read in from projectlibraries.properties file.'
+}
+
+defaultTasks "setup", "buildMpsIntroCourse"
+
+// ------------- /BUILD TASKS -------------
