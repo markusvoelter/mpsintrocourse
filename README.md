@@ -2,6 +2,15 @@
 
 A slightly advanced introduction to MPS: two languages, an generator, and interpreter, language compositon and non-textual notations. Check out this [Youtube playlist](https://www.youtube.com/playlist?list=PLrylAcnrHsvhnmO87Ws7B8h8yrvU2sFMb) to understand the code. And explore the [commits](https://github.com/markusvoelter/mpsintrocourse/commits/master) and [branches](https://github.com/markusvoelter/mpsintrocourse/branches) for intermediate states.
 
+# Getting started with the tutorial
+* Clone the repository `git clone https://github.com/markusvoelter/mpsintrocourse.git`
+* Navigate into the root folder of the repository
+* Execute `./gradlew` or `./gradlew.bat`
+* Download MPS 2018.2.6 https://www.jetbrains.com/mps/download/ (or https://www.jetbrains.com/mps/download/previous.html)
+* Open MPS and open the cloned directory as a project
+* Watch [the videos](#videos) 
+
+
 # More Tutorials
 
 * Of course you might want to check out [Jetbrains' MPS docs page](https://www.jetbrains.com/mps/learn/)
@@ -29,7 +38,7 @@ A slightly advanced introduction to MPS: two languages, an generator, and interp
 
 
 
-# Videos
+# [Videos](#videos)
 
 ### Basic Language Implementation
 
