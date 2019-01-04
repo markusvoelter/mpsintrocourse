@@ -40,36 +40,6 @@
   
   <target name="assemble" depends="classes, declare-mps-tasks">
     <mkdir dir="${build.layout}" />
-    <mkdir dir="${build.tmp}/default/code.build.jar" />
-    <mkdir dir="${build.tmp}/default/code.build.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/code.build.jar/META-INF/module.xml">
-      <module namespace="code.build" type="solution" uuid="2916e3a4-3dfa-4f4b-86f4-defd373adaf1">
-        <dependencies />
-        <classpath>
-          <entry path="." />
-        </classpath>
-        <sources jar="code.build-src.jar" descriptor="code.build.msd" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.layout}/code.build.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/code.build" />
-      <fileset dir="${mpsintrocource.home}/solutions/code.build" includes="icons/**" />
-      <fileset dir="${mpsintrocource.home}/solutions/code.build/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
-      <fileset dir="${build.tmp}/default/code.build.jar" />
-    </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-code.build-models">
-      <fileset dir="${mpsintrocource.home}/solutions/code.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
-    </copyModels>
-    <jar destfile="${build.layout}/code.build-src.jar" duplicate="preserve">
-      <fileset dir="${mpsintrocource.home}/solutions/code.build/source_gen">
-        <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
-        <exclude name="**/checkpoints" />
-        <exclude name="**/*.mps" />
-      </fileset>
-      <zipfileset file="${mpsintrocource.home}/solutions/code.build/code.build.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-code.build-models" prefix="module/models" />
-    </jar>
     <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}org.iets3.opensource.minor=${org.iets3.opensource.minor}${line.separator}org.iets3.opensource.major=${org.iets3.opensource.major}${line.separator}org.iets3.opensource.build=${org.iets3.opensource.build}${line.separator}org.iets3.opensource.version=${org.iets3.opensource.version}${line.separator}com.mbeddr.platform.major.version=${com.mbeddr.platform.major.version}${line.separator}com.mbeddr.platform.minor.version=${com.mbeddr.platform.minor.version}${line.separator}com.mbeddr.platform.build=${com.mbeddr.platform.build}${line.separator}com.mbeddr.platform.mbeddr.version=${com.mbeddr.platform.mbeddr.version}${line.separator}de.itemis.mps.extensions.versionNumber=${de.itemis.mps.extensions.versionNumber}</echo>
   </target>
   

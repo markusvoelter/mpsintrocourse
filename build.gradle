@@ -106,7 +106,7 @@ task buildAllScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveMpsArt
     scriptClasspath = buildScriptClasspath
 }
 
-task buildMpsIntroCourse(type: BuildLanguages, dependsOn: [resolveMps, resolveMpsArtifacts]) {
+task buildMpsIntroCourse(type: BuildLanguages, dependsOn: [resolveMps, resolveMpsArtifacts, buildAllScripts]) {
     script rootProject.file('build/mpsintrocourse/build.xml')
     scriptArgs = buildScriptArgs
     scriptClasspath = buildScriptClasspath
