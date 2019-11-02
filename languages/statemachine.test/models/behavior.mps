@@ -164,7 +164,7 @@
             <node concept="10QFUN" id="4ByeTwKsbOj" role="33vP2m">
               <node concept="2OqwBi" id="4ByeTwKsbOe" role="10QFUP">
                 <node concept="liA8E" id="4ByeTwKsbOf" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
+                  <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
                   <node concept="Xl_RD" id="4ByeTwKsbOg" role="37wK5m">
                     <property role="Xl_RC" value="___exec" />
                   </node>

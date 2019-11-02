@@ -105,11 +105,11 @@
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="3364660638048049750" name="jetbrains.mps.lang.core.structure.PropertyAttribute" flags="ng" index="A9Btg">
-        <property id="1757699476691236117" name="propertyName" index="2qtEX9" />
+        <property id="1757699476691236117" name="name_DebugInfo" index="2qtEX9" />
         <property id="1341860900487648621" name="propertyId" index="P4ACc" />
       </concept>
       <concept id="3364660638048049745" name="jetbrains.mps.lang.core.structure.LinkAttribute" flags="ng" index="A9Btn">
-        <property id="1757699476691236116" name="linkRole" index="2qtEX8" />
+        <property id="1757699476691236116" name="role_DebugInfo" index="2qtEX8" />
         <property id="1341860900488019036" name="linkId" index="P3scX" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -164,7 +164,7 @@
         <node concept="3clFbF" id="4ByeTwKn3AJ" role="3cqZAp">
           <node concept="2YIFZM" id="4ByeTwKn3Bd" role="3clFbG">
             <ref role="1Pybhc" to="u132:~TestCase" resolve="TestCase" />
-            <ref role="37wK5l" to="u132:~TestCase.assertEquals(java.lang.String,java.lang.String):void" resolve="assertEquals" />
+            <ref role="37wK5l" to="u132:~TestCase.assertEquals(java.lang.String,java.lang.String)" resolve="assertEquals" />
             <node concept="Xl_RD" id="4ByeTwKn3BN" role="37wK5m">
               <property role="Xl_RC" value="10" />
             </node>
@@ -190,7 +190,7 @@
         <node concept="3clFbF" id="4ByeTwKnfja" role="3cqZAp">
           <node concept="2YIFZM" id="4ByeTwKnfJo" role="3clFbG">
             <ref role="1Pybhc" to="cvlm:~JUnitCore" resolve="JUnitCore" />
-            <ref role="37wK5l" to="cvlm:~JUnitCore.main(java.lang.String...):void" resolve="main" />
+            <ref role="37wK5l" to="cvlm:~JUnitCore.main(java.lang.String...)" resolve="main" />
             <node concept="Xl_RD" id="4ByeTwKnfJp" role="37wK5m">
               <property role="Xl_RC" value="junitfaq.SimpleTest" />
               <node concept="17Uvod" id="4ByeTwKnfUX" role="lGtFl">

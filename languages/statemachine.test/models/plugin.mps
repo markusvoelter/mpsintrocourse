@@ -505,7 +505,7 @@
                   <ref role="3cqZAo" node="4ByeTwKqO$m" resolve="sb" />
                 </node>
                 <node concept="liA8E" id="4ByeTwKqQt0" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
+                  <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String)" resolve="append" />
                   <node concept="3cpWs3" id="4ByeTwKr13T" role="37wK5m">
                     <node concept="Xl_RD" id="4ByeTwKr149" role="3uHU7w">
                       <property role="Xl_RC" value="\n" />
@@ -543,7 +543,7 @@
               <ref role="3cqZAo" node="4ByeTwKqO$m" resolve="sb" />
             </node>
             <node concept="liA8E" id="4ByeTwKqPJL" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~StringBuilder.toString():java.lang.String" resolve="toString" />
+              <ref role="37wK5l" to="wyt6:~StringBuilder.toString()" resolve="toString" />
             </node>
           </node>
         </node>
