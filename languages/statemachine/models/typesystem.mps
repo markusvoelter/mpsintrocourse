@@ -173,9 +173,6 @@
         <child id="1226511765987" name="elementType" index="2hN53Y" />
       </concept>
       <concept id="1226516258405" name="jetbrains.mps.baseLanguage.collections.structure.HashSetCreator" flags="nn" index="2i4dXS" />
-      <concept id="1226566855640" name="jetbrains.mps.baseLanguage.collections.structure.AddSetElementOperation" flags="nn" index="2l5eF5">
-        <child id="1226567214363" name="argument" index="2l6Ag6" />
-      </concept>
       <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
@@ -191,6 +188,7 @@
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
+      <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
@@ -305,12 +303,12 @@
               <node concept="37vLTw" id="6u4eORbDahl" role="2Oq$k0">
                 <ref role="3cqZAo" node="6u4eORbD3V2" resolve="names" />
               </node>
-              <node concept="2l5eF5" id="6u4eORbDbiw" role="2OqNvi">
-                <node concept="2OqwBi" id="6u4eORbDbwJ" role="2l6Ag6">
-                  <node concept="2GrUjf" id="6u4eORbDbn4" role="2Oq$k0">
+              <node concept="TSZUe" id="34t4jP61Uti" role="2OqNvi">
+                <node concept="2OqwBi" id="34t4jP61Utf" role="25WWJ7">
+                  <node concept="2GrUjf" id="34t4jP61Utg" role="2Oq$k0">
                     <ref role="2Gs0qQ" node="6u4eORbD42X" resolve="n" />
                   </node>
-                  <node concept="3TrcHB" id="6u4eORbDbIQ" role="2OqNvi">
+                  <node concept="3TrcHB" id="34t4jP61Uth" role="2OqNvi">
                     <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                   </node>
                 </node>
