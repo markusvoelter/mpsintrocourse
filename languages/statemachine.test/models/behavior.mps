@@ -2,7 +2,7 @@
 <model ref="r:e26d9e90-5942-4094-b746-e3e6610936b5(statemachine.test.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -164,7 +164,7 @@
             <node concept="10QFUN" id="4ByeTwKsbOj" role="33vP2m">
               <node concept="2OqwBi" id="4ByeTwKsbOe" role="10QFUP">
                 <node concept="liA8E" id="4ByeTwKsbOf" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
+                  <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
                   <node concept="Xl_RD" id="4ByeTwKsbOg" role="37wK5m">
                     <property role="Xl_RC" value="___exec" />
                   </node>
