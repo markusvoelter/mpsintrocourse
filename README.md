@@ -6,8 +6,7 @@ A slightly advanced introduction to MPS: two languages, an generator, and interp
 * Clone the repository `git clone https://github.com/markusvoelter/mpsintrocourse.git`
 * Navigate into the root folder of the repository
 * Execute `./gradlew` or `./gradlew.bat`
-* Download MPS 2018.2.6 https://www.jetbrains.com/mps/download/ (or https://www.jetbrains.com/mps/download/previous.html)
-* ** YES, it is actually still on 2018.2! Make sure you download the right MPS! **
+* Download MPS 2019.2.3 https://www.jetbrains.com/mps/download/ (or https://www.jetbrains.com/mps/download/previous.html)
 * Open MPS and open the cloned directory as a project
 * Watch [the videos](#videos) 
 
