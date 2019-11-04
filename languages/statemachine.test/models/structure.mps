@@ -2,7 +2,7 @@
 <model ref="r:0b47203f-161f-4b90-8725-f33b7f8247c7(statemachine.test.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -46,16 +46,15 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6u4eORbDoAC" role="1TKVEi">
       <property role="IQ2ns" value="7459152088147528104" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="machine" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="op4d:6u4eORbC10C" resolve="StateMachine" />
     </node>
     <node concept="1TJgyj" id="6u4eORbDoPx" role="1TKVEi">
       <property role="IQ2ns" value="7459152088147529057" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="contents" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6u4eORbDoPw" resolve="ITestCaseContent" />
     </node>
     <node concept="PrWs8" id="6u4eORbDOIq" role="PzmwI">
@@ -73,9 +72,8 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6u4eORbDoPB" role="1TKVEi">
       <property role="IQ2ns" value="7459152088147529063" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="state" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="op4d:6u4eORbCnYh" resolve="State" />
     </node>
     <node concept="PrWs8" id="6u4eORbDoP_" role="PzmwI">
@@ -89,9 +87,8 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6u4eORbDoQ3" role="1TKVEi">
       <property role="IQ2ns" value="7459152088147529091" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="event" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="op4d:6u4eORbCnYs" resolve="Event" />
     </node>
     <node concept="PrWs8" id="6u4eORbDS3i" role="PzmwI">
