@@ -8,7 +8,7 @@ A slightly advanced introduction to MPS: two languages, a generator, an interpre
 * Execute `./gradlew` or `./gradlew.bat`
 * Download MPS 2019.2.3 https://www.jetbrains.com/mps/download/ (or https://www.jetbrains.com/mps/download/previous.html)
 * Open MPS and open the cloned directory as a project
-* Watch [the videos](#videos) ** N.B. Since MPS 2019.2, there are numbered branches in this repository which are corresponding with the numbers of the videos in the playlist. Be aware of that, since the videos don't refer to branches but rather to commits. If you want the old commit structure (which only works for MPS 2018.2), you can look in the maintenance/mps20182/&ast; branches **
+* Watch [the videos](#videos) __N.B. Since MPS 2019.2, there are numbered branches in this repository which are corresponding with the numbers of the videos in the playlist. Be aware of that, since the videos don't refer to branches but rather to commits. If you want the old commit structure (which only works for MPS 2018.2), you can look in the maintenance/mps20182/&ast; branches__
 
 
 # More Tutorials
