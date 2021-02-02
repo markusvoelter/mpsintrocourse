@@ -4,6 +4,7 @@ A slightly advanced introduction to MPS: two languages, a generator, an interpre
 
 __N.B. Since MPS 2019.2, there are numbered branches in this repository which are corresponding with the numbers of the videos in the playlist. Be aware of that, since the videos don't refer to branches but rather to commits. If you want the old commit structure (which only works for MPS 2018.2), you can look in the maintenance/mps20182/&ast; branches__
 __So for the code corresponding with video number 4, you will need to refer to the branch named 04-second-language-for-testing-statemachines. For versions of the code that work on older MPS releases than MPS 2020.2, please refer to the branches in maintenance/<mps_version>.__
+__As an extra support for obtaining KernelF for your MPS version, you can also refer to [this DSLFoundry post](http://dslfoundry.com/itemis-artifacts-for-mps-2019-3-through-mps-2020-1/)__
 
 # Getting started with the tutorial
 * Clone the repository `git clone https://github.com/markusvoelter/mpsintrocourse.git`
