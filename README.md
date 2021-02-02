@@ -2,6 +2,9 @@
 
 A slightly advanced introduction to MPS: two languages, a generator, an interpreter, language composition and non-textual notations. Check out this [Youtube playlist](https://www.youtube.com/playlist?list=PLrylAcnrHsvhnmO87Ws7B8h8yrvU2sFMb) to understand the code. And explore the [commits](https://github.com/markusvoelter/mpsintrocourse/commits/master) and [branches](https://github.com/markusvoelter/mpsintrocourse/branches) for intermediate states.
 
+__N.B. Since MPS 2019.2, there are numbered branches in this repository which are corresponding with the numbers of the videos in the playlist. Be aware of that, since the videos don't refer to branches but rather to commits. If you want the old commit structure (which only works for MPS 2018.2), you can look in the maintenance/mps20182/&ast; branches__
+__So for the code corresponding with video number 4, you will need to refer to the branch named 04-second-language-for-testing-statemachines. For versions of the code that work on older MPS releases than MPS 2020.2, please refer to the branches in maintenance/<mps_version>.__
+
 # Getting started with the tutorial
 * Clone the repository `git clone https://github.com/markusvoelter/mpsintrocourse.git`
 * Navigate into the root folder of the repository
