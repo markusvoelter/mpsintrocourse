@@ -2,7 +2,7 @@
 <model ref="r:9e47c7b0-4606-47f9-b421-40bc0eb89d03(statemachine.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -102,14 +102,14 @@
       <concept id="1227096620180" name="jetbrains.mps.lang.typesystem.structure.ReferenceMessageTarget" flags="ng" index="2OE7Q9">
         <reference id="1227096645744" name="linkDeclaration" index="2OEe5H" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-        <child id="1227096836496" name="messageTarget" index="2OEWyd" />
-      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643443" name="messageTarget" index="1urrC5" />
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -238,7 +238,7 @@
             <node concept="Xl_RD" id="6u4eORbC9fh" role="2MkJ7o">
               <property role="Xl_RC" value="name must start with capital letter" />
             </node>
-            <node concept="1YBJjd" id="6u4eORbC9fL" role="2OEOjV">
+            <node concept="1YBJjd" id="6u4eORbC9fL" role="1urrMF">
               <ref role="1YBMHb" node="6u4eORbC11M" resolve="sm" />
             </node>
           </node>
@@ -292,7 +292,7 @@
                 <node concept="Xl_RD" id="6u4eORbD9OP" role="2MkJ7o">
                   <property role="Xl_RC" value="duplicate name" />
                 </node>
-                <node concept="2GrUjf" id="6u4eORbD9Pl" role="2OEOjV">
+                <node concept="2GrUjf" id="6u4eORbD9Pl" role="1urrMF">
                   <ref role="2Gs0qQ" node="6u4eORbD42X" resolve="n" />
                 </node>
               </node>
@@ -368,11 +368,11 @@
             <node concept="Xl_RD" id="6u4eORbDlBl" role="2MkJ7o">
               <property role="Xl_RC" value="exactly one initial state required" />
             </node>
-            <node concept="1YBJjd" id="6u4eORbDlC3" role="2OEOjV">
-              <ref role="1YBMHb" node="6u4eORbC11M" resolve="sm" />
-            </node>
-            <node concept="2ODE4t" id="6u4eORbDlJC" role="2OEWyd">
+            <node concept="2ODE4t" id="6u4eORbDlJC" role="1urrC5">
               <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+            </node>
+            <node concept="1YBJjd" id="6u4eORbDlC3" role="1urrMF">
+              <ref role="1YBMHb" node="6u4eORbC11M" resolve="sm" />
             </node>
           </node>
         </node>
@@ -419,11 +419,11 @@
             <node concept="Xl_RD" id="6u4eORbDd8b" role="2MkJ7o">
               <property role="Xl_RC" value="cannot transition into self" />
             </node>
-            <node concept="1YBJjd" id="6u4eORbDd8t" role="2OEOjV">
-              <ref role="1YBMHb" node="6u4eORbDbXc" resolve="tx" />
-            </node>
-            <node concept="2OE7Q9" id="6u4eORbDdCH" role="2OEWyd">
+            <node concept="2OE7Q9" id="6u4eORbDdCH" role="1urrC5">
               <ref role="2OEe5H" to="op4d:6u4eORbCnYz" resolve="target" />
+            </node>
+            <node concept="1YBJjd" id="6u4eORbDd8t" role="1urrMF">
+              <ref role="1YBMHb" node="6u4eORbDbXc" resolve="tx" />
             </node>
           </node>
         </node>
