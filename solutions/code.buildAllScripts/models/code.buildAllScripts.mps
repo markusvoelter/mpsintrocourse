@@ -91,35 +91,6 @@
     <property role="2DA0ip" value="../../build/mpsintrocourse.allScripts" />
     <node concept="398rNT" id="5wLtKNeSRPo" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
-      <node concept="55IIr" id="5wLtKNeT9Pe" role="398pKh">
-        <node concept="2Ry0Ak" id="14E7mQ7L2BS" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="14E7mQ7L3eU" role="2Ry0An">
-            <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="14E7mQ7L3gb" role="2Ry0An">
-              <property role="2Ry0Am" value=".." />
-              <node concept="2Ry0Ak" id="14E7mQ7L3hy" role="2Ry0An">
-                <property role="2Ry0Am" value=".." />
-                <node concept="2Ry0Ak" id="14E7mQ7L3jT" role="2Ry0An">
-                  <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="14E7mQ7L3ls" role="2Ry0An">
-                    <property role="2Ry0Am" value=".." />
-                    <node concept="2Ry0Ak" id="14E7mQ7L3o0" role="2Ry0An">
-                      <property role="2Ry0Am" value="Applications" />
-                      <node concept="2Ry0Ak" id="14E7mQ7L3pj" role="2Ry0An">
-                        <property role="2Ry0Am" value="MPS 2018.2.app" />
-                        <node concept="2Ry0Ak" id="14E7mQ7L3qc" role="2Ry0An">
-                          <property role="2Ry0Am" value="Contents" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="398rNT" id="44RyrhrBozY" role="1l3spd">
       <property role="TrG5h" value="mpsintrocource.home" />
