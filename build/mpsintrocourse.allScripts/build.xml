@@ -3,7 +3,7 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/code" />
   <property name="build.layout" location="${build.dir}/artifacts/code" />
-  <property name="mps.home" location="${basedir}/../../../../../../Applications/MPS 2018.2.app/Contents" />
+  <property name="mps.home" location="" />
   <property name="mpsintrocource.home" location="${basedir}/../.." />
   <property name="artifacts.root" location="${mpsintrocource.home}/build/artifacts" />
   <property name="artifacts.mps" location="${mps.home}" />
@@ -39,9 +39,15 @@
   
   <path id="path.mps.ant.path">
     <pathelement location="${artifacts.mps}/lib/ant/lib/ant-mps.jar" />
-    <pathelement location="${artifacts.mps}/lib/jdom.jar" />
-    <pathelement location="${artifacts.mps}/lib/log4j.jar" />
+    <fileset dir="${artifacts.mps}/lib">
+      <include name="util.jar" />
+      <include name="3rd-party-rt.jar" />
+    </fileset>
   </path>
+  
+  <taskdef resource="jetbrains/mps/build/ant/antlib.xml" classpathref="path.mps.ant.path" />
+  
+  <generator-settings id="m2m-defaults" strictMode="true" parallelThreads="8" inplaceTransform="false" warnWrongChild="true" createStaticRefs="true" skipUnmodifiedModels="${mps.generator.skipUnmodifiedModels}" />
   
   <target name="assemble" depends="classes, declare-mps-tasks">
     <mkdir dir="${build.layout}" />
@@ -71,7 +77,8 @@
   
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
-    <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" hideWarnings="false" createStaticRefs="true" fork="true" skipUnmodifiedModels="${mps.generator.skipUnmodifiedModels}" logLevel="${mps.ant.log}">
+    <generate fork="true" logLevel="${mps.ant.log}">      
+      <settings refid="m2m-defaults" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.common" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.filepicker" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.infrastructure.misc" />
@@ -84,6 +91,7 @@
       <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.extensions.build" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.utils" />
+      <plugin path="${artifacts.com.mbeddr.platform}/de.q60.mps.collections.libs" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.slisson.mps.conditionalEditor" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.slisson.mps.hacks" />
       <plugin path="${artifacts.com.mbeddr.platform}/mbeddr.platform" />
@@ -91,9 +99,13 @@
       <plugin path="${artifacts.com.mbeddr.platform}/mps-multiline" />
       <plugin path="${artifacts.com.mbeddr.platform}/mps-richtext" />
       <plugin path="${artifacts.mps}/lib/mps-workbench.jar" />
+      <plugin path="${artifacts.mps}/plugins/git4idea" />
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core" />
+      <plugin path="${artifacts.mps}/plugins/mps-git4idea" />
       <plugin path="${artifacts.mps}/plugins/mps-httpsupport" />
+      <plugin path="${artifacts.mps}/plugins/mps-vcs" />
+      <plugin path="${artifacts.mps}/plugins/svn4idea" />
       <plugin path="${artifacts.org.iets3.opensource}/org.iets3.build.os" />
       <library file="${artifacts.mps}/languages/baseLanguage/closures.runtime.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/collections.runtime.jar" />
@@ -111,7 +123,9 @@
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.tuples.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.tuples.runtime.jar" />
+      <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.util.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguageInternal.jar" />
+      <library file="${artifacts.mps}/languages/editor/jetbrains.mps.editing.runtime.jar" />
       <library file="${artifacts.mps}/languages/editor/jetbrains.mps.editor.runtime.jar" />
       <library file="${artifacts.mps}/languages/editor/jetbrains.mps.editorlang.runtime.jar" />
       <library file="${artifacts.mps}/languages/editor/jetbrains.mps.ide.editor.jar" />
@@ -158,7 +172,6 @@
       <library file="${artifacts.mps}/languages/make/jetbrains.mps.smodel.resources.jar" />
       <library file="${artifacts.mps}/languages/mps-stubs.jar" />
       <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.baseLanguage.search.jar" />
-      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.baseLanguage.util.jar" />
       <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.platform.jar" />
       <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.refactoring.platform.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
@@ -191,9 +204,7 @@
     </generate>
   </target>
   
-  <target name="declare-mps-tasks">
-    <taskdef resource="jetbrains/mps/build/ant/antlib.xml" classpathref="path.mps.ant.path" />
-  </target>
+  <target name="declare-mps-tasks" />
   
   <target name="makeDependents" />
   

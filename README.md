@@ -10,7 +10,7 @@ __As an extra support for obtaining KernelF for your MPS version, you can also r
 * Clone the repository `git clone https://github.com/markusvoelter/mpsintrocourse.git`
 * Navigate into the root folder of the repository
 * Execute `./gradlew` or `./gradlew.bat`
-* Download MPS 2021.1 from https://www.jetbrains.com/mps/download/previous.html
+* Download MPS 2021.3 from https://www.jetbrains.com/mps/download/previous.html
 * Open MPS and open the cloned directory as a project
 * Watch [the videos](#videos) __N.B. Since MPS 2019.2, there are numbered branches in this repository which are corresponding with the numbers of the videos in the playlist. Be aware of that, since the videos don't refer to branches but rather to commits. If you want the old commit structure (which only works for MPS 2018.2), you can look in the maintenance/mps20182/&ast; branches__
 
@@ -42,7 +42,7 @@ __As an extra support for obtaining KernelF for your MPS version, you can also r
 
 
 
-# [Videos](#videos)
+# Videos
 
 ### Basic Language Implementation
 
@@ -78,16 +78,16 @@ I will release the videos over time. I will announce each newly released video o
 
 # Impressions
 
-![](https://github.com/markusvoelter/mpsintrocourse/blob/master/stuff/sm1.png)
+![](https://raw.githubusercontent.com/markusvoelter/mpsintrocourse/master/stuff/sm1.png)
 
 
-![](https://github.com/markusvoelter/mpsintrocourse/blob/master/stuff/sm2.png)
+![](https://raw.githubusercontent.com/markusvoelter/mpsintrocourse/master/stuff/sm2.png)
 
 
 ![](https://github.com/markusvoelter/mpsintrocourse/blob/master/stuff/sm3.png)
 
 
-![](https://github.com/markusvoelter/mpsintrocourse/blob/master/stuff/sm5.png)
+![](https://raw.githubusercontent.com/markusvoelter/mpsintrocourse/master/stuff/sm5.png)
 
 
-![](https://github.com/markusvoelter/mpsintrocourse/blob/master/stuff/sm4.png)
+![](https://raw.githubusercontent.com/markusvoelter/mpsintrocourse/master/stuff/sm4.png)

@@ -1,18 +1,18 @@
 //will pull the groovy classes/types from nexus to the classpath
 buildscript {
     repositories {
-        maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
+        maven { url 'https://artifacts.itemis.cloud/repository/maven-mps/' }
         mavenCentral()
     }
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.5.+'
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.11.+'
     }
 }
 
 // ------------- DEPENDENCY VERSIONS ------------- 
 // Dependency versions
-ext.mpsVersion = '2021.1.3'
-ext.iets3OpenSourceVersion = '2021.1.+'
+ext.mpsVersion = '2021.3.2'
+ext.iets3OpenSourceVersion = '2021.3.+'
 // ------------- /DEPENDENCY VERSIONS -------------
 
 
@@ -23,8 +23,7 @@ apply plugin: 'base'
 // ------------- DEPENDENCY CONFIG -------------
 
 ext.dependencyRepositories = [
-        'https://projects.itemis.de/nexus/content/repositories/mbeddr',
-        'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
+        'https://artifacts.itemis.cloud/repository/maven-mps/'
 ]
 
 repositories {
