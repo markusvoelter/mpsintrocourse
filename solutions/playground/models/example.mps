@@ -38,9 +38,9 @@
       <property role="TrG5h" value="red" />
       <property role="2G9kjv" value="true" />
       <node concept="2G9kji" id="6u4eORbD3D6" role="2G9rHz">
-        <ref role="2G9kjI" node="6u4eORbD3Dj" resolve="green" />
+        <ref role="2G9kjI" node="6u4eORbD3Dj" />
         <node concept="2G9rIV" id="6u4eORbD3Da" role="2G9rDH">
-          <ref role="2G9rIU" node="6u4eORbCyok" resolve="pedestrianButton" />
+          <ref role="2G9rIU" node="6u4eORbCyok" />
         </node>
       </node>
     </node>
