@@ -1,4 +1,4 @@
-![](https://github.com/markusvoelter/mpsintrocourse/blob/master/stuff/pres.png)
+![](https://github.com/markusvoelter/mpsintrocourse/blob/master/docs/pres.png)
 
 A slightly advanced introduction to MPS: two languages, a generator, an interpreter, language composition and non-textual notations. Check out this [Youtube playlist](https://www.youtube.com/playlist?list=PLrylAcnrHsvhnmO87Ws7B8h8yrvU2sFMb) to understand the code. And explore the [commits](https://github.com/markusvoelter/mpsintrocourse/commits/master) and [branches](https://github.com/markusvoelter/mpsintrocourse/branches) for intermediate states.
 
@@ -78,16 +78,16 @@ I will release the videos over time. I will announce each newly released video o
 
 # Impressions
 
-![](https://raw.githubusercontent.com/markusvoelter/mpsintrocourse/master/stuff/sm1.png)
+![](https://raw.githubusercontent.com/markusvoelter/mpsintrocourse/master/docs/sm1.png)
 
 
-![](https://raw.githubusercontent.com/markusvoelter/mpsintrocourse/master/stuff/sm2.png)
+![](https://raw.githubusercontent.com/markusvoelter/mpsintrocourse/master/docs/sm2.png)
 
 
-![](https://github.com/markusvoelter/mpsintrocourse/blob/master/stuff/sm3.png)
+![](https://github.com/markusvoelter/mpsintrocourse/blob/master/docs/sm3.png)
 
 
-![](https://raw.githubusercontent.com/markusvoelter/mpsintrocourse/master/stuff/sm5.png)
+![](https://raw.githubusercontent.com/markusvoelter/mpsintrocourse/master/docs/sm5.png)
 
 
-![](https://raw.githubusercontent.com/markusvoelter/mpsintrocourse/master/stuff/sm4.png)
+![](https://raw.githubusercontent.com/markusvoelter/mpsintrocourse/master/docs/sm4.png)
