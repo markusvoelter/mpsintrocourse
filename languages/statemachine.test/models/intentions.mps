@@ -189,7 +189,7 @@
                         <node concept="2OqwBi" id="4bmM0avMDVv" role="3uHU7B">
                           <node concept="2OqwBi" id="4bmM0avMDin" role="2Oq$k0">
                             <node concept="37vLTw" id="4bmM0avMDa7" role="2Oq$k0">
-                              <ref role="3cqZAo" node="6ykj8Qjz54I" />
+                              <ref role="3cqZAo" node="6ykj8Qjz54I" resolve="it" />
                             </node>
                             <node concept="liA8E" id="4bmM0avMDQn" role="2OqNvi">
                               <ref role="37wK5l" to="exr9:~EditorComponent.getRootCell()" resolve="getRootCell" />
@@ -215,7 +215,7 @@
                   <node concept="3clFbF" id="4bmM0avMBSu" role="3cqZAp">
                     <node concept="2OqwBi" id="4bmM0avMBSv" role="3clFbG">
                       <node concept="37vLTw" id="4bmM0avMBSw" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6ykj8Qjz54K" />
+                        <ref role="3cqZAo" node="6ykj8Qjz54K" resolve="it" />
                       </node>
                       <node concept="liA8E" id="4bmM0avMBSx" role="2OqNvi">
                         <ref role="37wK5l" to="exr9:~EditorComponent.update()" resolve="update" />

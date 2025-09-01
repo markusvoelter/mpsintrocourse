@@ -374,7 +374,7 @@
                                 </node>
                                 <node concept="2OqwBi" id="4ByeTwKrn79" role="1m5AlR">
                                   <node concept="37vLTw" id="4ByeTwKrn7a" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="6ykj8Qjz54T" />
+                                    <ref role="3cqZAo" node="6ykj8Qjz54T" resolve="it" />
                                   </node>
                                   <node concept="3TrEf2" id="4ByeTwKrn7b" role="2OqNvi">
                                     <ref role="3Tt5mk" to="op4d:6u4eORbCo4w" resolve="trigger" />

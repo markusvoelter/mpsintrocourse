@@ -345,7 +345,7 @@
                   <node concept="3clFbF" id="6u4eORbDjU$" role="3cqZAp">
                     <node concept="2OqwBi" id="6u4eORbDjU_" role="3clFbG">
                       <node concept="37vLTw" id="6u4eORbDjUA" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6ykj8Qjz54O" />
+                        <ref role="3cqZAo" node="6ykj8Qjz54O" resolve="it" />
                       </node>
                       <node concept="3TrcHB" id="6u4eORbDjUB" role="2OqNvi">
                         <ref role="3TsBF5" to="op4d:6u4eORbCnYi" resolve="initial" />
