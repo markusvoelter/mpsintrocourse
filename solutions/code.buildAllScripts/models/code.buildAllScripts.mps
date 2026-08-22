@@ -21,7 +21,7 @@
         <reference id="5617550519002745380" name="script" index="1l3spb" />
         <child id="4129895186893471026" name="artifacts" index="2JcizS" />
       </concept>
-      <concept id="8618885170173601777" name="jetbrains.mps.build.structure.BuildCompositePath" flags="ng" index="2Ry0Ak">
+      <concept id="8618885170173601777" name="jetbrains.mps.build.structure.BuildCompositePath" flags="nn" index="2Ry0Ak">
         <property id="8618885170173601779" name="head" index="2Ry0Am" />
         <child id="8618885170173601778" name="tail" index="2Ry0An" />
       </concept>
@@ -81,7 +81,7 @@
         <property id="322010710375892619" name="uuid" index="3LESm3" />
         <child id="322010710375956261" name="path" index="3LF7KH" />
       </concept>
-      <concept id="7259033139236285166" name="jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency" flags="ng" index="1SiIV0">
+      <concept id="7259033139236285166" name="jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency" flags="nn" index="1SiIV0">
         <child id="7259033139236285167" name="dependency" index="1SiIV1" />
       </concept>
     </language>
@@ -106,7 +106,7 @@
     <node concept="398rNT" id="4MR$$QmqomQ" role="1l3spd">
       <property role="TrG5h" value="artifacts.root" />
       <node concept="398BVA" id="44RyrhrBqkL" role="398pKh">
-        <ref role="398BVh" node="44RyrhrBozY" />
+        <ref role="398BVh" node="44RyrhrBozY" resolve="mpsintrocource.home" />
         <node concept="2Ry0Ak" id="14E7mQ7L3r2" role="iGT6I">
           <property role="2Ry0Am" value="build" />
           <node concept="2Ry0Ak" id="14E7mQ7L3sJ" role="2Ry0An">
@@ -120,22 +120,22 @@
     <node concept="2sgV4H" id="14E7mQ7MAGe" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="14E7mQ7MAGf" role="2JcizS">
-        <ref role="398BVh" node="5wLtKNeSRPo" />
+        <ref role="398BVh" node="5wLtKNeSRPo" resolve="mps.home" />
       </node>
     </node>
     <node concept="2sgV4H" id="14E7mQ7L2jv" role="1l3spa">
-      <ref role="1l3spb" to="ip48:5wLtKNeSRPl" />
+      <ref role="1l3spb" to="ip48:5wLtKNeSRPl" resolve="org.iets3.opensource" />
       <node concept="398BVA" id="14E7mQ7L3tb" role="2JcizS">
-        <ref role="398BVh" node="4MR$$QmqomQ" />
+        <ref role="398BVh" node="4MR$$QmqomQ" resolve="artifacts.root" />
         <node concept="2Ry0Ak" id="14E7mQ7L3tE" role="iGT6I">
           <property role="2Ry0Am" value="org.iets3.opensource" />
         </node>
       </node>
     </node>
     <node concept="2sgV4H" id="1Y5vs7yK2HP" role="1l3spa">
-      <ref role="1l3spb" to="al5i:3AVJcIMlF8l" />
+      <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
       <node concept="398BVA" id="1Y5vs7yK3FR" role="2JcizS">
-        <ref role="398BVh" node="4MR$$QmqomQ" />
+        <ref role="398BVh" node="4MR$$QmqomQ" resolve="artifacts.root" />
         <node concept="2Ry0Ak" id="14E7mQ7L41C" role="iGT6I">
           <property role="2Ry0Am" value="com.mbeddr.platform" />
         </node>
@@ -149,7 +149,7 @@
         <property role="TrG5h" value="code.build" />
         <property role="3LESm3" value="2916e3a4-3dfa-4f4b-86f4-defd373adaf1" />
         <node concept="398BVA" id="14E7mQ7MAJB" role="3LF7KH">
-          <ref role="398BVh" node="44RyrhrBozY" />
+          <ref role="398BVh" node="44RyrhrBozY" resolve="mpsintrocource.home" />
           <node concept="2Ry0Ak" id="14E7mQ7MAJG" role="iGT6I">
             <property role="2Ry0Am" value="solutions" />
             <node concept="2Ry0Ak" id="14E7mQ7MAJH" role="2Ry0An">
@@ -168,7 +168,7 @@
         <node concept="3rtmxn" id="14E7mQ7MALa" role="3bR31x">
           <node concept="3LXTmp" id="14E7mQ7MALb" role="3rtmxm">
             <node concept="398BVA" id="14E7mQ7MALc" role="3LXTmr">
-              <ref role="398BVh" node="44RyrhrBozY" />
+              <ref role="398BVh" node="44RyrhrBozY" resolve="mpsintrocource.home" />
               <node concept="2Ry0Ak" id="14E7mQ7MALd" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="14E7mQ7MALe" role="2Ry0An">
@@ -183,17 +183,17 @@
         </node>
         <node concept="1SiIV0" id="14E7mQ7MAL$" role="3bR37C">
           <node concept="3bR9La" id="14E7mQ7MAL_" role="1SiIV1">
-            <ref role="3bR37D" to="ip48:7C6tnXfWu6n" />
+            <ref role="3bR37D" to="ip48:7C6tnXfWu6n" resolve="org.iets3.opensource.build" />
           </node>
         </node>
         <node concept="1SiIV0" id="14E7mQ7MALA" role="3bR37C">
           <node concept="3bR9La" id="14E7mQ7MALB" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:7Pr7tifzlku" />
+            <ref role="3bR37D" to="al5i:7Pr7tifzlku" resolve="com.mbeddr.platform" />
           </node>
         </node>
         <node concept="1SiIV0" id="7cvdn2t7dle" role="3bR37C">
           <node concept="3bR9La" id="7cvdn2t7dlf" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:PE3B26VOkn" />
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
           </node>
         </node>
         <node concept="1BupzO" id="7cvdn2t7dlk" role="3bR31x">
@@ -202,7 +202,7 @@
           <property role="1HemKv" value="true" />
           <node concept="3LXTmp" id="7cvdn2t7dll" role="1HemKq">
             <node concept="398BVA" id="7cvdn2t7dlg" role="3LXTmr">
-              <ref role="398BVh" node="44RyrhrBozY" />
+              <ref role="398BVh" node="44RyrhrBozY" resolve="mpsintrocource.home" />
               <node concept="2Ry0Ak" id="7cvdn2t7dlh" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="7cvdn2t7dli" role="2Ry0An">
