@@ -131,7 +131,6 @@
       <jvmargs>
         <arg value="-ea" />
         <arg value="-Xmx512m" />
-        <arg value="--add-opens=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED" />
       </jvmargs>
       <macro name="mps.home" path="${mps.home}" />
       <macro name="mpsintrocource.home" path="${mpsintrocource.home}" />
