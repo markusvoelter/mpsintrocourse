@@ -76,27 +76,27 @@
       <property role="TrG5h" value="red" />
       <property role="2G9kjv" value="true" />
       <node concept="2G9kji" id="6u4eORbD3D6" role="2G9rHz">
-        <ref role="2G9kjI" node="4ByeTwKoFwt" resolve="error" />
+        <ref role="2G9kjI" node="4ByeTwKoFwt" />
         <node concept="2G9rIV" id="6u4eORbD3Da" role="2G9rDH">
-          <ref role="2G9rIU" node="6u4eORbCyok" resolve="pedestrianButton" />
+          <ref role="2G9rIU" node="6u4eORbCyok" />
         </node>
         <node concept="30d7iD" id="4ByeTwKoFw4" role="1TwzY$">
           <node concept="30bXRB" id="4ByeTwKoFwa" role="30dEs_">
             <property role="30bXRw" value="0" />
           </node>
           <node concept="1TwMC8" id="4ByeTwKoFvY" role="30dEsF">
-            <ref role="1TwMC9" node="4ByeTwKnZQn" resolve="counter" />
+            <ref role="1TwMC9" node="4ByeTwKnZQn" />
           </node>
         </node>
       </node>
       <node concept="2G9kji" id="4ByeTwKoFwD" role="2G9rHz">
-        <ref role="2G9kjI" node="6u4eORbD3Dj" resolve="green" />
+        <ref role="2G9kjI" node="6u4eORbD3Dj" />
         <node concept="2G9rIV" id="4ByeTwKoFwE" role="2G9rDH">
-          <ref role="2G9rIU" node="6u4eORbCyok" resolve="pedestrianButton" />
+          <ref role="2G9rIU" node="6u4eORbCyok" />
         </node>
         <node concept="30cPrO" id="4ByeTwKoLlE" role="1TwzY$">
           <node concept="1TwMC8" id="4ByeTwKoFwH" role="30dEsF">
-            <ref role="1TwMC9" node="4ByeTwKnZQn" resolve="counter" />
+            <ref role="1TwMC9" node="4ByeTwKnZQn" />
           </node>
           <node concept="30bXRB" id="4ByeTwKoFwG" role="30dEs_">
             <property role="30bXRw" value="0" />
@@ -112,15 +112,15 @@
     </node>
   </node>
   <node concept="2G8rbE" id="6u4eORbDKFr">
-    <ref role="2G8rb_" node="6u4eORbCnXb" resolve="TrafficLight" />
+    <ref role="2G8rb_" node="6u4eORbCnXb" />
     <node concept="2G8roD" id="6u4eORbDOIo" role="2G8roG">
-      <ref role="2G8roE" node="6u4eORbCyop" resolve="red" />
+      <ref role="2G8roE" node="6u4eORbCyop" />
     </node>
     <node concept="2G8rrf" id="6u4eORbDSfr" role="2G8roG">
-      <ref role="2G8rre" node="6u4eORbCyok" resolve="pedestrianButton" />
+      <ref role="2G8rre" node="6u4eORbCyok" />
     </node>
     <node concept="2G8roD" id="6u4eORbDSrC" role="2G8roG">
-      <ref role="2G8roE" node="6u4eORbD3Dj" resolve="green" />
+      <ref role="2G8roE" node="6u4eORbD3Dj" />
     </node>
   </node>
 </model>
